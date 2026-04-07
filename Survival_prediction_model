@@ -23,14 +23,14 @@ DATA_DIR_T2 = "/Users/juliangendreau/Desktop/mgmt_data_aligned2"
 LABELS_CSV = "/Users/juliangendreau/Desktop/labels.csv"
 
 BATCH_SIZE = 4
-NUM_EPOCHS = 200
+NUM_EPOCHS = 10
 LR = 5e-5                     # lower LR for stability
 WEIGHT_DECAY = 1e-4           # added weight decay
 WARMUP_EPOCHS = 5             # LR warmup
 TARGET_SHAPE = (96, 96, 96)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-PATIENCE = 20                 # increased patience
+PATIENCE = 5                 # increased patience
 BEST_MODEL_PATH = "best_model.pth"
 SURVIVAL_COL = "Survivalmonths"
 
